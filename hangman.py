@@ -40,7 +40,7 @@ def hangman_game():
     if guessed_letters is len(chosen_word):
         print "Congratulations, you guessed the word correctly!"
     else:
-        print "Game over!"
+        print "Game over! The word is: " + chosen_word
 
 
 def random_word():
@@ -49,3 +49,6 @@ def random_word():
     f.close()
 
     return words[randint(0, len(words) - 1)]
+
+
+hangman_game()
